@@ -1,1 +1,2 @@
-Change from DEVELOP branch
+Change resolved: merged feature and develop changes
+Remove: Removed the conflicting code
