@@ -1,0 +1,12 @@
+Apr 01 08:51:07 controlplane kubelet[2604]: I0401 08:51:07.518 kubelet.go:300] "Starting kubelet"
+Apr 01 08:51:07 controlplane kubelet[2604]: W0401 08:51:07.519 kubelet.go:320] "Flag --container-runtime-endpoint is deprecated"
+Apr 01 08:51:07 controlplane kubelet[2604]: W0401 08:51:07.519 kubelet.go:321] "Flag --cgroup-driver is deprecated"
+Apr 01 08:51:07 controlplane kubelet[2604]: E0401 08:51:07.522 server.go:250] "Failed to run kubelet" err="failed to initialize container runtime: rpc error: code = Unknown desc = failed to connect containerd: dial unix /run/containerd/containerd.sock: connect: no such file or directory"
+Apr 01 08:51:07 controlplane systemd[1]: kubelet.service: Main process exited, code=exited, status=1/FAILURE
+Apr 01 08:51:07 controlplane systemd[1]: kubelet.service: Failed with result 'exit-code'
+Apr 01 08:51:10 controlplane systemd[1]: kubelet.service: Scheduled restart job, restart counter is at 1.
+Apr 01 08:51:10 controlplane systemd[1]: Stopped kubelet.service - Kubernetes Node Agent
+Apr 01 08:51:10 controlplane systemd[1]: Started kubelet.service - Kubernetes Node Agent
+Apr 01 08:51:10 controlplane kubelet[2771]: E0401 08:51:10.842 kubelet.go:400] "Container runtime not ready" err="containerd is not running"
+Apr 01 08:51:10 controlplane kubelet[2771]: E0401 08:51:10.843 kubelet.go:405] "Kubelet cannot update node status" err="node not ready"
+Apr 01 08:51:10 controlplane kubelet[2771]: I0401 08:51:10.850 server.go:500] "Kubelet stopped"
